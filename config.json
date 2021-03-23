@@ -1,0 +1,31 @@
+{
+    "general":
+    {
+        "input_file_minute":"ABC_Level_Two_Tick_Data.csv",
+        "input_file_hour":"ABC_Level_One_Tick_Data.csv"
+    },
+    "fe":{
+        "vol_set1":[5000, 100000, 10000],
+        "vol_set2":[100000, 1100000, 100000],
+        "time_window": ["5","T"]
+    },
+
+    "training":
+    {
+        "modeltype":"Regressor",
+        "models":["RF","AB", "LR","LinearSVR"],
+        "cv":3,
+        "reg_param_scoring":"neg_mean_squared_error",
+        "scoring":
+        {
+            "mean_mse":"neg_mean_squared_error",
+            "mean_mae":"neg_mean_absolute_error", 
+            "ex_var":"explained_variance",
+            "r2":"r2"
+        }
+    },
+    "prediction":
+    {
+        "model_scoring":"mean_mse"
+    }
+}
