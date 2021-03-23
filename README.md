@@ -6,6 +6,7 @@ Please see package requirements in txt file.
 ## Intro
 This module predicts the selling cost of a security in a future time window. 
 Input: it takes 2 input trading datassets (by minute and hour)
+
 Config: 
 - General: input data names 
 - FE: simulated volumes and predicted time window 
