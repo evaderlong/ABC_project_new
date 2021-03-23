@@ -8,7 +8,7 @@ This module predicts the selling cost of a security in a future time window.
 Input: it takes 2 input trading datassets (by minute and hour)
 
 Config: 
-- General: input data names 
+- General: input data file names (you may want to update the names as the command option only allows you to select input folder) 
 - FE: simulated volumes and predicted time window 
 - Training: types of models and evaluation metrics to choose from 
 - Prediction: evaluation metric if dataset has labels
